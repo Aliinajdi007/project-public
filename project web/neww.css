@@ -1,0 +1,546 @@
+   
+   
+   
+   .top-bar li a:hover {
+    color: green;
+    font-size: larger;
+}
+
+
+
+
+.langEn, .frr {
+    font-family: Tahoma, Geneva, sans-serif;
+    position: relative;
+    margin: 0px;
+    outline: none;
+    resize: none;
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    background-color: #f0f0f0; /* Button background color */
+    border: 1px solid #ccc; /* Border color and thickness */
+    border-radius: 0px; /* Rounded corners */
+    text-align: center; /* Center text horizontally */
+    line-height: 40px; /* Center text vertically */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    display: inline-block; /* Ensure buttons are inline */
+    vertical-align: middle; /* Align buttons vertically */
+    
+}
+
+.langEn {
+    background-image: url(../images/bgrxLang.png);
+    background-position: 0px -28px;
+    background-repeat: repeat-x;
+    color: rgb(0, 0, 0); /* Text color for English button */
+   
+   
+}
+
+.frr {
+    background-image: url(../images/bgrxLang.png);
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    color: black; /* Text color for French button */
+    margin-right: 10%;
+}
+
+/* Flex container to ensure buttons are inline */
+.buttons-container {
+    display: flex;
+    justify-content: right; 
+   
+    gap: 0px; /* Space between buttons */
+}
+
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+
+}
+
+header .top-bar {
+    background-color: white;
+    color: white;
+    font-size: medium;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-image: url(decor.png);
+}
+
+header .top-bar .logo {
+    height: 90px;
+}
+
+header nav ul {
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: gray;
+    text-decoration: none;
+}
+
+.main h2 {
+    width: 20%;
+}
+
+.main-nav {
+   
+    background-color: #015d00;
+    background-image: linear-gradient(314deg, #015d00 0%, #04bf00 74%);
+    
+    padding: 10px 10px;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: medium;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav ul li {
+    margin: 0px 0px;
+    position: relative;
+    width: 20%;
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+}
+
+.student-section {
+    border: 5px solid #00b140;
+    box-shadow: 0 8px 8px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.student-section h2 {
+    background-color: #00b140;
+    color: white;
+    padding: 10px;
+    margin: 0px;
+}
+
+.faculty-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.faculty-cards .card {
+    display: flex;
+    align-items: center;
+    flex: 1 1 calc(33.33% - 10px);
+    /* Each card takes up 1/3 of the container width minus the gap */
+    min-width: 150px;
+    border: 1px solid #dcd2d2;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.faculty-cards a {
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+    margin-left: 10px;
+}
+.faculty-cards a:hover{
+    font-size: larger;
+    color: #333;
+}
+
+footer {
+    
+    background-color: white;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px, rgba(0, 0, 0, 0.3) 0px 25px 40px -10px;
+}
+
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer .social-icons img {
+    height: 30px;
+    margin: 0 5px;
+}
+
+footer .contact-info p {
+    margin: 5px 0;
+}
+
+.rounded-button {
+    background-color: #00b140;
+    /* Green background */
+    border: none;
+    /* Remove default border */
+    color: white;
+    /* White text */
+    padding: 10px 20px;
+    /* Add some padding */
+    text-align: center;
+    /* Center the text */
+    text-decoration: none;
+    /* Remove underline */
+    display: inline-block;
+    /* Inline-block element */
+    font-size: 16px;
+    /* Increase font size */
+    margin: 4px 2px;
+    /* Add some margin */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    border-radius: 25px;
+    /* Rounded corners */
+}
+
+.rounded-button:hover {
+    background-color: #007b32;
+    /* Darker green on hover */
+}
+
+/* Sub-menu styles */
+.main-nav ul .sub-menu {
+    display: none;
+    /* Hide sub-menu initially */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    min-width: 160px;
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    /* Align text to left in sub-menu */
+}
+
+.main-nav ul .sub-menu li {
+    margin: 0;
+}
+
+.main-nav ul .sub-menu li a {
+    padding: 12px 16px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+}
+
+.main-nav ul .sub-menu li a:hover {}
+
+/* Show sub-menu on hover */
+.main-nav ul li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    border-radius: 15px;
+    border-color: #007b32;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding: 10px;
+    width: 230px;
+}
+
+.sub-menu li {
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    border-color: #007b32;
+}
+
+.sub-menu li img {
+    width: 60px;
+    /* Adjust the size as needed */
+    height: 60px;
+    /* Adjust the size as needed */
+    margin-right: 0px;
+    margin-left: 5px;
+}
+
+.sub-menu li a {
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+}
+
+.sub-menu li:hover {
+    background-color: #ffffff;
+    border-radius: 15px;
+    border-color: #007b32;
+}
+
+
+
+.sub-menu li a:hover {
+    font-size: larger;
+}
+
+
+
+
+
+
+/* General styles */
+.slideshow {
+    margin-top: 10px;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    
+  }
+  
+  /* Slides container */
+  .slideshow-inner {
+    display: flex;
+    width: 350%; /* Number of slides * 100% */
+    
+   
+  }
+  
+  /* Individual slide */
+  .slide {
+    flex: 0 0  50%; /* Set to 1/6th width of the container (100% / 6) */
+    text-align: center;
+  }
+  
+  .slide img {
+    max-width: 100%;
+    height: 500px;
+    animation: slide 18s infinite;
+
+  }
+  
+  /* Keyframe animations for slideshow */
+  @keyframes slide {
+    0% {
+      transform: translateX(0px)
+    }
+   
+    100% {
+      transform: translateX(-800px)
+    }
+   
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.topfooter {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.wrap990 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 990px;
+    width: 100%;
+}
+
+.footerSection {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+    text-align: center;
+}
+
+.followUs,
+.likeOurPage,
+.locationModule,
+.poBoxModule,
+.joinOurMailing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.poBoxModule {
+    margin-top: -6px;
+}
+
+.txtFollow {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.locationModule {
+    padding-bottom: 0px;
+}
+
+.mobile {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.bp1 {
+    font-weight: bold;
+
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+}
+
+.socialItem img {
+    width: 35px;
+    height: 35px;
+}
+.socialItem img:hover {
+    width: 40px;
+    height: 40px;
+}
+
+.btnModuleLike iframe {
+    border: none;
+}
+
+
+.location {
+    font-weight: bold;
+}
+
+.location,
+.mobile {
+    font-size: 14px;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.bgEMail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputEmail {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+}
+
+.btnSignUp {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.btnSignUp:hover {
+    background-color: #45a049;
+}
+
+.btmFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #fbf7f7;
+    width: 100%;
+}
+
+.leftPart {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.leftItem {
+    margin-right: 10px;
+    color: #000000;
+    font-size: small;
+}
+
+.leftItem.sep {
+    margin: 0 5px;
+    font-size: small;
+}
+
+.rightPart {
+    display: flex;
+    align-items: center;
+    font-size: small;
+    color: #000000;
+}
+
+
+
+
+  
